@@ -12,12 +12,19 @@ void task10()
     Console.WriteLine($"Задача 10");
     Console.Write($"Введите 3х значное число: ");
     int.TryParse(Console.ReadLine()!, out task10_N);
-    string task10_N_text = Convert.ToString(task10_N);
-    int i = 1;
-    int[] array = new int[task10_N_text.Length];
-    array[i] = (int)char.GetNumericValue(task10_N_text[i]);
-    Console.WriteLine(array[i]);
 
+    if (task10_N < 100 || task10_N > 999)
+    {
+        Console.WriteLine($"Неверный ввод");
+    }
+    else
+    {
+        string task10_N_text = Convert.ToString(task10_N);
+        int i = 1;
+        int[] array = new int[task10_N_text.Length];
+        array[i] = (int)char.GetNumericValue(task10_N_text[i]);
+        Console.WriteLine(array[i]);
+    }
 
     // if (task10_N < 100 || task10_N > 999)
     // {
