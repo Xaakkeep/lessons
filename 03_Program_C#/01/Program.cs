@@ -5,6 +5,7 @@ a = 5; b = 7 -> max = 7
 a = 2 b = 10 -> max = 10
 a = -9 b = -3 -> max = -3
 */
+
 void task2()
 {
     int task2_A, task2_B;
@@ -94,6 +95,7 @@ void task6()
 5 -> 2, 4
 8 -> 2, 4, 6, 8 
 */
+
 void task8()
 {
     int task8_N, task8_res;
