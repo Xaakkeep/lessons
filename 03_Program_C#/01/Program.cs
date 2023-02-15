@@ -110,4 +110,28 @@ void task8()
     }
 }
 
-task8();
+void task()
+{
+    int i;
+    Console.Write($"Выберите задание: \nЗадача 2\nЗадача 4\nЗадача 6\nЗадача 8\n");
+    int.TryParse(Console.ReadLine()!, out i);
+    if (i == 2)
+    {
+        task2();
+    }
+    if (i == 4)
+    {
+        task4();
+    }
+    if (i == 6)
+    {
+        task6();
+    }
+    if (i == 8)
+    {
+        task8();
+    }
+
+
+}
+task();
