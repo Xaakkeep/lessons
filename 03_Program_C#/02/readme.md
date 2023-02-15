@@ -27,7 +27,7 @@ void task10()
         int i = 1;
         int[] array = new int[task10_N_text.Length];
         array[i] = (int)char.GetNumericValue(task10_N_text[i]);
-        Console.WriteLine(array[i]);
+        Console.WriteLine($"Втора цифра числа N - {array[i]}");
     }
 
     // if (task10_N < 100 || task10_N > 999)
