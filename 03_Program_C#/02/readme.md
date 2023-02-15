@@ -121,4 +121,25 @@ void task15()
 }
 
 // task15();
+
+void task()
+{
+    int i;
+    Console.Write($"Выберите задание: \nЗадача 10\nЗадача 13\nЗадача 15\n");
+    int.TryParse(Console.ReadLine()!, out i);
+    if (i == 10)
+    {
+        task10();
+    }
+    if (i == 13)
+    {
+        task13();
+    }
+    if (i == 15)
+    {
+        task15();
+    }
+
+}
+task();
 ```
