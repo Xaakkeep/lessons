@@ -108,4 +108,4 @@ void task8()
     }
 }
 
-// task8();
+task8();
