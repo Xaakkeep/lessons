@@ -12,16 +12,22 @@ void task10()
     Console.WriteLine($"Задача 10");
     Console.Write($"Введите 3х значное число: ");
     int.TryParse(Console.ReadLine()!, out task10_N);
+    string task10_N_text = Convert.ToString(task10_N);
+    int i = 1;
+    int[] array = new int[task10_N_text.Length];
+    array[i] = (int)char.GetNumericValue(task10_N_text[i]);
+    Console.WriteLine(array[i]);
 
-    if (task10_N < 100 || task10_N > 999)
-    {
-        Console.WriteLine($"Число меньше 100 или больше 1000");
-    }
-    else
-    {
-        Console.WriteLine($"Втора цифра числа N - {task10_N = task10_N / 10 % 10}");
 
-    }
+    // if (task10_N < 100 || task10_N > 999)
+    // {
+    //     Console.WriteLine($"Число меньше 100 или больше 1000");
+    // }
+    // else
+    // {
+    //     Console.WriteLine($"Втора цифра числа N - {task10_N = task10_N / 10 % 10}");
+
+    // }
 }
 
 // task10();
@@ -44,18 +50,31 @@ void task13()
     {
         Console.WriteLine($"Третьей цифры нет");
     }
-    else if (task13_N > 100 && task13_N < 999)
+    else
     {
-        Console.WriteLine($"Третье цифра числа N - {task13_N = task13_N % 10}");
+        string task13_N_text = Convert.ToString(task13_N);
+        int i = 2;
+        int[] array = new int[task13_N_text.Length];
+        array[i] = (int)char.GetNumericValue(task13_N_text[i]);
+        Console.WriteLine($"Третье цифра числа N - {array[i]}");
     }
-    else if (task13_N > 999 && task13_N < 9999)
-    {
-        Console.WriteLine($"Третье цифра числа N - {task13_N = task13_N / 10 % 10}");
-    }
-    else if (task13_N > 9999 && task13_N < 99999)
-    {
-        Console.WriteLine($"Третье цифра числа N - {task13_N = task13_N / 100 % 10}");
-    }
+
+    // if (task13_N < 100)
+    // {
+    //     Console.WriteLine($"Третьей цифры нет");
+    // }
+    // else if (task13_N > 100 && task13_N < 999)
+    // {
+    //     Console.WriteLine($"Третье цифра числа N - {task13_N = task13_N % 10}");
+    // }
+    // else if (task13_N > 999 && task13_N < 9999)
+    // {
+    //     Console.WriteLine($"Третье цифра числа N - {task13_N = task13_N / 10 % 10}");
+    // }
+    // else if (task13_N > 9999 && task13_N < 99999)
+    // {
+    //     Console.WriteLine($"Третье цифра числа N - {task13_N = task13_N / 100 % 10}");
+    // }
 
 }
 
