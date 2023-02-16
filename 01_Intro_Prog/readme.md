@@ -33,16 +33,16 @@
 ### Задача 2. Напишите псевдокод по блок-схеме
 
 ```python
-numb = [2, 5, 13, 7, 6, 4]
+num = [2, 5, 13, 7, 6, 4]
 size = 6
-summ = 0
+num_sum = 0
 avg = 0
 index =0
 while index < size:
-    summ = summ+ numb[index]
+    num_sum = num_sum + numb[index]
     index = index + 1
     
-avg = summ / size
+avg = num_sum / size
 print(avg)
 ```
 
