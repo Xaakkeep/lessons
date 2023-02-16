@@ -1,5 +1,7 @@
-# Инструкция по работе с Git 
+# Инструкция по работе с Git
+
 ## Настройка
+
 ```python
 #Версия git
 git --version
@@ -11,7 +13,9 @@ git config --global user.name "<ваше_имя>"
 # Установка email для пользователя
 git config --global user.email "<адрес_почты@email.com>"
 ```
+
 ## Создание и работа с репозиторием
+
 ```python
 #Для Linux и MacOS путь может выглядеть так /Users/UserName/Desktop/MyProject
 #Для Windows например С://MyProject
