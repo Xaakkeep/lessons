@@ -18,10 +18,7 @@ void task25()
 {
     int A = TakeConsoleInt("Введите число А: ");
     int B = TakeConsoleInt("Введите число Б: ");
-    // Console.Write("Введите число А: ");
-    // int.TryParse(Console.ReadLine()!, out task25_A);
-    // Console.Write("Введите число Б: ");
-    // int.TryParse(Console.ReadLine()!, out task25_B);
+
     int stepB(int a, int b)
     {
         int power = 1;
@@ -34,8 +31,6 @@ void task25()
     }
     Console.WriteLine($"Число {A} в степени {B} = {stepB(A, B)}");
     Console.WriteLine($"Число {A} в степени {B} = {Math.Pow(A, B)}"); // Проще и лучше
-
-
 }
 
 /* 
@@ -64,8 +59,6 @@ void task27()
         return res;
     }
     Console.WriteLine($"Сумма всех чисел в N[{N}] = {sum_N(N)}");
-
-
 }
 
 /*
