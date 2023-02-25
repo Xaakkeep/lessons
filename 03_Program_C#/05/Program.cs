@@ -82,19 +82,19 @@ void task38()
         int max = 0;
         for (int i = 0; i < arr.Length; i++)
         {
-            if (arr[i]>max)
+            if (arr[i] > max)
             {
                 max = arr[i];
             }
         }
         return max;
     }
-        int MinArray(int[] arr)
+    int MinArray(int[] arr)
     {
         int min = arr[0];
         for (int i = 0; i < arr.Length; i++)
         {
-            if (arr[i]<min)
+            if (arr[i] < min)
             {
                 min = arr[i];
             }
