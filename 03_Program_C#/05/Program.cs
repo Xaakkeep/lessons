@@ -1,12 +1,4 @@
-﻿int InputText(String text = "Введите число N: ")
-{
-    int num;
-    Console.Write(text);
-    int.TryParse(Console.ReadLine()!, out num);
-    return num;
-}
-
-// Console.Write(InputText());
+﻿// Console.Write(InputText());
 /* 
 Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
 
@@ -141,6 +133,14 @@ void PrintArray(Array arr)
         Console.Write($"[{arr.GetValue(i)}] ");
     }
     Console.WriteLine();
+}
+
+int InputText(String text = "Введите число N: ")
+{
+    int num;
+    Console.Write(text);
+    int.TryParse(Console.ReadLine()!, out num);
+    return num;
 }
 
 task();
