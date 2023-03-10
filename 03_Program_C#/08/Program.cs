@@ -199,8 +199,8 @@ void task60()
 void task62()
 {
     Console.WriteLine("Task 62");
-
-    int n = 6;
+    Console.WriteLine("Спиральный массив N на N");
+    int n = InputText("Введите N");
     int[,] sqareMatrix = new int[n, n];
 
     int temp = 1;
