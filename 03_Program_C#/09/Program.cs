@@ -7,7 +7,7 @@ N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 void task64()
 {
     Console.WriteLine("Task 64");
-    Console.Write("Натуральные число от N до 1\n");
+    Console.Write("Все натуральные число в промежутке от N до 1\n");
     int N = InputText();
 
     int NumbPlusOne(int num)
@@ -61,7 +61,7 @@ void task68()
             if ((m != 0) && (n == 0)) return Akkerman(m - 1, 1);
             else return Akkerman(m - 1, Akkerman(m, n - 1));
     }
-    Console.WriteLine(Akkerman(M,N));
+    Console.WriteLine($"m = {M}, n = {N} -> A(m,n) = {Akkerman(M,N)}");
 }
 
 void task()
